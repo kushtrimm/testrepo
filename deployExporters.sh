@@ -1,12 +1,11 @@
 #!/bin/bash
 set -e
 
-
-
+$stage = echo "$StageName" | awk '{print tolower($0)}'
 
 if [[ $StageName = EUROPE ]]
 then
-    echo "Using europe url"
+    echo "Using europe"
 fi
 
 
