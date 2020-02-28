@@ -4,9 +4,9 @@ set -e
 
 
 
-if [[ $OUTPUT != exporter.ini ]]
+if [[ $StageName = EUROPE ]]
 then
-
+    echo "Using europe url"
 fi
 
 
@@ -15,7 +15,7 @@ do
 
     if [[ $OUTPUT != exporter.ini ]]
     then
-    scp $StageName-$OUTPUT kushtrim@192.168.93.3:/home/kushtrim/Work/testrepo/tests
+        echo "scp $StageName-$OUTPUT kushtrim@192.168.93.3:/home/kushtrim/Work/testrepo/tests"
     fi
 
 done
