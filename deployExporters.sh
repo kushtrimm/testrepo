@@ -14,7 +14,8 @@ do
 
     if [[ $OUTPUT != exporter.ini ]]
     then
-        scp $OUTPUT  kushtrim@192.168.93.3:/home/kushtrim/Work/testrepo/tests/$StageName-$OUTPUT
+        ssh kushtrim@192.168.93.3 "hostname"
+        #scp $OUTPUT  kushtrim@192.168.93.3:/home/kushtrim/Work/testrepo/tests/$StageName-$OUTPUT
     fi
 
 done
