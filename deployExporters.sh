@@ -14,7 +14,7 @@ do
 
     if [[ $OUTPUT != exporter.ini ]]
     then
-        scp $StageName-$OUTPUT kushtrim@192.168.93.3:/home/kushtrim/Work/testrepo/tests
+        scp $OUTPUT  kushtrim@192.168.93.3:/home/kushtrim/Work/testrepo/tests/$StageName-$OUTPUT
     fi
 
 done
